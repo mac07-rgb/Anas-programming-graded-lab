@@ -216,7 +216,10 @@ static Value parse_power(Parser *ps) {
     Value base = parse_primary(ps);
     if (ps->err) return base;
     skip_ws(ps);
-    if (ps->p + 1 < ps->end && ps->p[0] == '*' && ps->p[1] == '*') {
+    if (ps->p < ps->end &&
+    ps->end - ps->p >= 2 &&
+    ps->p[0] == '*' &&
+    ps->p[1] == '*') {
         char *op_pos = ps->p;
         ps->p += 2;
         skip_ws(ps);
