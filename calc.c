@@ -1,4 +1,7 @@
-// Mohammad Anas 
+// Mohammad Anas 251ADB003
+// Resources and AI tools: ChatGPT (OpenAI), used for assistance
+// understanding the arithmetic parser, debugging, and testing.
+// Conversation history: https://chatgpt.com/share/6adee758-76bc-83eb-bff6-7ff088434788
 
 #define _XOPEN_SOURCE 700
 
